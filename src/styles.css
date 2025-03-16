@@ -1,10 +1,31 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    columns: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2e6;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.barra-navegacion a, .barra-navegacion a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.barra-navegacion a.activo {
+    color: aqua;
 }
