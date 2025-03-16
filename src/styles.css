@@ -9,6 +9,12 @@ body {
     background-color: #f2f2e6;
 }
 
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .barra-navegacion {
     display: flex;
     justify-content: flex-end;
@@ -28,4 +34,23 @@ body {
 
 .barra-navegacion a.activo {
     color: aqua;
+}
+
+.contenedor-recetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.receta {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
