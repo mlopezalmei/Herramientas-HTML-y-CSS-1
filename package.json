@@ -1,7 +1,7 @@
 {
   "name": "pec1",
   "version": "1.0.0",
-  "source": "src/portada.html",
+  "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead, ie >= 11",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
