@@ -1,19 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+:root {
+    --carne: #f2f2e6;
+    --verde: rgb(64, 195, 130);
+}
+
 * {
+    margin: 0;
+    padding: 0;
+}
+
+*, 
+*::before, 
+*::after {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #f2f2e6;
+    background-color: var(--carne);
 }
 
-img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+header {
+    margin: 1rem 0;
 }
+
+footer {
+    background-color: black;
+    color: white;            
+    text-align: center;      
+    padding: 1rem 0;     
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--verde);
+}
+
 
 .barra-navegacion {
     display: flex;
@@ -27,30 +62,69 @@ img {
     gap: 1rem;
 }
 
-.barra-navegacion a, .barra-navegacion a:hover {
+.barra-navegacion a {
     text-decoration: none;
     color: black;
 }
 
+.barra-navegacion a:hover {
+    color: var(--verde);
+}
+
 .barra-navegacion a.activo {
-    color: aqua;
+    color: var(--verde);
+}
+
+section {
+    text-align: center;
 }
 
 .contenedor-recetas {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+    .contenedor-recetas {
+        flex-direction: row;
+    }
+}
+
+h2 {
+    margin: 1rem 0;
+    text-align: center;
 }
 
 .receta {
-    width: 30%;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: white;
     display: flex;
     flex-direction: column;
+}
+
+.detalles {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+}
+
+.detalles p {
+    background-color: #f2f2e6;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.imagen-receta {
+    height: 250px;
+    overflow: hidden;
+}
+
+.imagen-receta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
