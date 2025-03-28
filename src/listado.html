@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="barra-navegacion">
             <ul>
-                <li><a href="index.html">Portada</a></li>
-                <li><a href="listado.html" class="activo">Listado</a></li>
-                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Portada</a></li>
+                <li><a href="listado.html" class="activo"><i class="fa fa-fw fa-book"></i> Listado</a></li>
+                <li><a href="enlaces.html"><i class="fa fa-fw fa-link"></i> Enlaces</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Lista de Recetas</h1>
-        <div class="contenedor-recetas">
-            <div class="receta">
-                <div class="info-receta">
-                    <h2>Pasta al pesto con tomate</h2>
-                    <p><strong>Duración:</strong> 30 minutos</p>
-                    <p><strong>Categoría:</strong> Plato principal</p>
+    <main>
+
+        <section>
+            <h1>Lista de Recetas</h1>
+            <div class="contenedor-recetas">
+                <div class="receta">
+                    <div class="info-receta">
+                        <h2>Pasta al pesto con tomate</h2>
+                        <div class="detalles">
+                            <p><strong>30 minutos</strong></p>
+                            <p><strong>Pastas</strong></p>
+                        </div>
+
+                    </div>
+                    <div class="imagen-receta">
+                        <img src="img/pasta_pesto.jpg" alt="Pasta al pesto con tomate">
+                    </div>
                 </div>
-                <div class="imagen-receta">
-                    <img src="img/pasta_pesto.jpg" alt="Pasta al pesto con tomate">
+
+                <div class="receta">
+                    <div class="info-receta">
+                        <h2>Hamburguesa con patatas</h2>
+                        <div class="detalles">
+                            <p><strong>45 minutos</strong></p>
+                            <p><strong>Carnes</strong></p>
+                        </div>
+                    </div>
+                    <div class="imagen-receta">
+                        <img src="img/hamburguesa.jpg" alt="Hamburguesa con patatas">
+                    </div>
+                </div>
+
+                <div class="receta">
+                    <div class="info-receta">
+                        <h2>Tarta de queso</h2>
+                        <div class="detalles">
+                            <p><strong>1 hora</strong></p>
+                            <p><strong>Postres</strong></p>
+                        </div>
+                    </div>
+                    <div class="imagen-receta">
+                        <img src="img/tarta_queso.jpg" alt="Tarta de queso">
+                    </div>
                 </div>
             </div>
-    
-            <div class="receta">
-                <div class="info-receta">
-                    <h2>Hamburguesa con patatas</h2>
-                    <p><strong>Duración:</strong> 45 minutos</p>
-                    <p><strong>Categoría:</strong> Comida rápida</p>
-                </div>
-                <div class="imagen-receta">
-                    <img src="img/hamburguesa.jpg" alt="Hamburguesa con patatas">
-                </div>
-            </div>
-    
-            <div class="receta">
-                <div class="info-receta">
-                    <h2>Tarta de queso</h2>
-                    <p><strong>Duración:</strong> 1 hora</p>
-                    <p><strong>Categoría:</strong> Postre</p>
-                </div>
-                <div class="imagen-receta">
-                    <img src="img/tarta_queso.jpg" alt="Tarta de queso">
-                </div>
-            </div>
-        </div>
-    </section>    
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Recetas del Mundo | Todos los derechos reservados</p>
+        <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </footer>
+
 
 </body>
+
 </html>
