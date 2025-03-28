@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
 </head>
@@ -11,15 +13,42 @@
     <header>
         <nav class="barra-navegacion">
             <ul>
-                <li><a href="index.html" class="activo">Portada</a></li>
-                <li><a href="listado.html">Listado</a></li>
-                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="index.html" class="activo"><i class="fa fa-fw fa-home"></i> Portada</a></li>
+                <li><a href="listado.html"><i class="fa fa-fw fa-book"></i> Listado</a></li>
+                <li><a href="enlaces.html"><i class="fa fa-fw fa-link"></i> Enlaces</a></li>
             </ul>
         </nav>
-
-        <h1>Página de inicio</h1>
-        <p>Bienvenido a la página de inicio</p>
     </header>
+
+    <main class="portada">
+        <section class="bienvenida">
+            <h1>Bienvenido a Recetas del Mundo</h1>
+            <p>Explora deliciosas recetas de diferentes culturas y aprende a cocinarlas paso a paso.</p>
+            <a href="listado.html" class="boton">Ver Recetas</a>
+        </section>
+
+        <section class="explicacion-web">
+            <h2>¿Qué encontrarás en Recetas del Mundo?</h2>
+            <p>Recetas del Mundo es un espacio donde reunimos las mejores recetas de diferentes culturas y tradiciones gastronómicas. Aquí podrás:</p>
+            <ul>
+                <li>Explorar recetas de todo el mundo, organizadas por categorías.</li>
+                <li>Descubrir platos tradicionales y nuevas tendencias gastronómicas.</li>
+                <li>Aprender trucos y consejos para mejorar tus habilidades en la cocina.</li>
+                <li>Compartir tus propias recetas con la comunidad.</li>
+            </ul>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>© 2025 Recetas del Mundo | Todos los derechos reservados</p>
+        <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
