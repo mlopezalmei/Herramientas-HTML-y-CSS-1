@@ -5,10 +5,12 @@
     --verde: rgb(64, 195, 130);
 }
 
-/* Reset básico */
+/*--------------------
+Para todas las páginas
+---------------------- */
+
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,20 +22,26 @@ body {
     flex-direction: column;
 }
 
-/* Estructura principal */
 header {
-    margin: 1rem 0;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: auto;
+    height: auto;
 }
 
 main {
     flex-grow: 1;
-    padding: 0rem 1rem;
-}
-
-@media (min-width: 768px) {
-    main {
-        padding: 0px;
-    }
+    padding: 0 1rem;
 }
 
 footer {
@@ -58,7 +66,6 @@ footer a:hover {
     color: var(--verde);
 }
 
-/* Barra de navegación */
 .barra-navegacion {
     display: flex;
     justify-content: flex-end;
@@ -81,64 +88,25 @@ footer a:hover {
     color: var(--verde);
 }
 
-/* Contenido principal */
-section {
-    text-align: center;
-}
-
-h2 {
-    margin: 1rem 0;
-    text-align: center;
-}
-
-/* Contenedor de recetas */
-.contenedor-recetas {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    margin: 0 1rem;
-}
-
-@media (min-width: 1024px) {
-    .contenedor-recetas {
-        flex-direction: row;
-    }
-}
-
-/* Tarjeta de receta */
-.receta {
-    width: 100%;
-    margin: 1rem 0;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-.detalles {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-}
-
-.detalles p {
-    background-color: var(--carne);
-    border-radius: 8px;
-    padding: 10px;
-}
-
-/* Imagen de la receta */
-.imagen-receta {
-    height: 250px;
-    overflow: hidden;
-}
-
-.imagen-receta img {
+img {
     width: 100%;
     height: 100%;
 }
 
-/* Sección de bienvenida */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--verde);
+}
+
+
+/* ------------
+Para index.html
+--------------- */
+
 .portada {
     flex-grow: 1;
     display: flex;
@@ -161,3 +129,118 @@ h2 {
     padding: 1.5rem;
     border-radius: 10px;
 }
+
+
+/* ----------------
+Para categoria.html
+------------------- */
+
+.contenedor-recetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-recetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor-recetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.receta {
+    width: 100%;
+    margin: 1rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.receta:hover {
+    color: black;
+}
+
+.receta h3 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.detalles {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.detalles p {
+    background-color: var(--carne);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.imagen-receta {
+    height: 250px;
+    overflow: hidden;
+}
+
+/* ---------------
+Para detalles.html
+------------------ */
+
+.breadcrumb {
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+.detalles-receta {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.campo h3 {
+    text-align: left;
+    border-radius: 8px;
+    background-color: var(--carne);
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem;
+    width: fit-content;
+}
+
+.campo p, .campo ul {
+    background-color: var(--carne);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.campo img {
+    background-color: var(--carne);
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    max-width: calc(100% - 2rem);
+}
+
