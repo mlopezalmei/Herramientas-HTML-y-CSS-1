@@ -25,8 +25,15 @@ body {
 header {
     margin: 1rem 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
 }
 
 header h1 {
@@ -100,6 +107,11 @@ a {
 
 a:hover {
     color: var(--verde);
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
 }
 
 
@@ -209,13 +221,34 @@ Para detalles.html
 .detalles-receta {
     background-color: white;
     border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .detalles-receta {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+}
+
+.multimedia {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
 }
 
 .campo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 1rem 0;
+}
+
+.campo:last-of-type {
+    padding-bottom: 1rem;
 }
 
 .campo h3 {
@@ -227,12 +260,19 @@ Para detalles.html
     width: fit-content;
 }
 
-.campo p, .campo ul {
+.campo p {
     background-color: var(--carne);
     border-radius: 8px;
     padding: 0.5rem 1rem;
     margin: 0 1rem;
     text-align: center;
+}
+
+.campo ul, .campo ol {
+    background-color: var(--carne);
+    border-radius: 8px;
+    margin: 0 1rem;
+    padding: 0.5rem 2rem;
 }
 
 .campo img {
@@ -242,5 +282,65 @@ Para detalles.html
     display: block;
     margin: 0 auto;
     max-width: calc(100% - 2rem);
+}
+
+.campo video {
+    background-color: var(--carne);
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    max-width: calc(100% - 2rem);
+    height: 100%;
+    object-fit: fill;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 2rem auto;
+}
+
+.imagenes-relacionadas {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.imagenes-relacionadas h2 {
+    margin-bottom: 1rem;
+}
+
+.contenedor-relacionadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-relacionadas {
+        flex-direction: row;
+    }
+}
+
+.imagen-relacionada {
+    height: 400px;
+    background-color: var(--carne);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .imagen-relacionada {
+        flex: 1;
+    }
+}
+
+.imagen-relacionada img {
+    width: 100%;
 }
 
