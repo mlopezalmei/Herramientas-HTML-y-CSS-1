@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
 
 :root {
     --carne: #f2f2e6;
@@ -112,6 +114,7 @@ a:hover {
 h2 {
     text-align: center;
     margin: 1rem;
+    font-size: 2rem;
 }
 
 
@@ -131,15 +134,21 @@ Para index.html
 .explicacion-web {
     max-width: 700px;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1rem auto;
+    text-align: center;
 }
 
-.explicacion-web {
-    padding: 1.5rem;
-    border-radius: 10px;
+.boton {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: var(--carne);
+    width: fit-content;
+    padding: 0.5rem;
 }
 
 
@@ -172,6 +181,8 @@ Para categoria.html
     background-color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .receta:hover {
@@ -198,6 +209,42 @@ Para categoria.html
 .imagen-receta {
     height: 250px;
     overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#paginacion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#paginacion ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#paginacion ul li a {
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    padding: 0 7px;
+}
+
+#paginacion ul li a:hover {
+    color: white;
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
+}
+
+#paginacion ul li:first-of-type a {
+    color: white;
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
 }
 
 /* ---------------
@@ -205,7 +252,13 @@ Para detalles.html
 ------------------ */
 
 .breadcrumb {
-    list-style: none;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .breadcrumb {
+        text-align: left;
+    }
 }
 
 .breadcrumb li {
@@ -213,7 +266,6 @@ Para detalles.html
 }
 
 .breadcrumb li+li:before {
-    padding: 8px;
     color: black;
     content: "/\00a0";
 }
@@ -342,5 +394,40 @@ hr {
 
 .imagen-relacionada img {
     width: 100%;
+}
+
+
+/*---------------
+Para enlaces.html
+----------------- */
+
+.enlaces {
+    max-width: 700px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.enlaces ul {
+    list-style-position: inside;
+    text-align: center;
+    display: inline-block;
+}
+
+.enlaces li {
+    text-align: left;
+}
+
+#nota {
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background-color: var(--carne);
+    border-left: 8px solid var(--verde);
+    border-radius: 8px;
 }
 

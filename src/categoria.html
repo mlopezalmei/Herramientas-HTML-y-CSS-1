@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoría</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <script type="module" src="app.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -29,6 +28,19 @@
 
         <section>
             <h2>Categoría de Recetas</h2>
+
+            <section class="filtro-categorias">
+                <label for="categoria">Filtrar por categoría:</label>
+                <select id="categoria" onchange="filtrarRecetas()">
+                    <option value="todas">Todas</option>
+                    <option value="Pastas">Pastas</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Postres">Postres</option>
+                    <option value="Guisos">Guisos</option>
+                    <option value="Arroces">Arroces</option>
+                </select>
+            </section>
+            
             <div class="contenedor-recetas">
                 
                 <a href="detalles-pasta.html" class="receta">
@@ -110,6 +122,15 @@
                 </div>
             </div>
         </section>
+
+        <nav id="paginacion">
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">...</a></li>
+            </ul>
+        </nav>
 
     </main>
 
