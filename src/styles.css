@@ -151,10 +151,32 @@ Para index.html
     padding: 0.5rem;
 }
 
+.titulo-paginas {
+    margin: 1rem auto;
+    font-size: 2rem;
+    background-color: white;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 /* ----------------
 Para categoria.html
 ------------------- */
+
+.filtro-categorias {
+    background-color: white;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filtro-categorias label {
+    font-weight: bold;
+}
 
 .contenedor-recetas {
     display: grid;
@@ -401,7 +423,7 @@ hr {
 Para enlaces.html
 ----------------- */
 
-.enlaces {
+.contenedor-enlaces {
     max-width: 700px;
     background-color: white;
     padding: 1rem;
@@ -411,13 +433,13 @@ Para enlaces.html
     text-align: center;
 }
 
-.enlaces ul {
+.contenedor-enlaces ul {
     list-style-position: inside;
     text-align: center;
     display: inline-block;
 }
 
-.enlaces li {
+.contenedor-enlaces li {
     text-align: left;
 }
 

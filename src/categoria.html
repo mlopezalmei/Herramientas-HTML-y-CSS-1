@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -27,11 +27,11 @@
     <main>
 
         <section>
-            <h2>Categoría de Recetas</h2>
+            <h2 class="titulo-paginas">Categoría de Recetas</h2>
 
-            <section class="filtro-categorias">
+            <div class="filtro-categorias">
                 <label for="categoria">Filtrar por categoría:</label>
-                <select id="categoria" onchange="filtrarRecetas()">
+                <select id="categoria">
                     <option value="todas">Todas</option>
                     <option value="Pastas">Pastas</option>
                     <option value="Carnes">Carnes</option>
@@ -39,7 +39,7 @@
                     <option value="Guisos">Guisos</option>
                     <option value="Arroces">Arroces</option>
                 </select>
-            </section>
+            </div>
             
             <div class="contenedor-recetas">
                 

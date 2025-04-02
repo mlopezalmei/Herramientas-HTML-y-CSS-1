@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const categoriaSelect = document.getElementById("categoria");
+    if (categoriaSelect) {
+        categoriaSelect.addEventListener("change", filtrarRecetas)
+    }
+});
 
 function filtrarRecetas() {
   const categoriaSeleccionada = document.getElementById('categoria').value;
