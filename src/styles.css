@@ -216,6 +216,14 @@ Para categoria.html
     text-align: center;
 }
 
+a.receta {
+    transition: transform 0.3s ease;
+}
+
+a.receta:hover {
+    transform: scale(1.05);
+}
+
 .detalles {
     display: flex;
     justify-content: space-between;

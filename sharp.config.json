@@ -1,0 +1,11 @@
+{
+  "jpeg": {
+    "quality": 80,
+    "progressive": true,
+    "mozjpeg": true
+  },
+  "png": {
+    "compressionLevel": 7,
+    "adaptiveFiltering": true
+  }
+}
