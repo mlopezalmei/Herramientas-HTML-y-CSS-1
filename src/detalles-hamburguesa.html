@@ -40,7 +40,11 @@
                 <div class="multimedia">
                     <div class="campo">
                         <h3>Imagen</h3>
-                        <img src="./img/hamburguesa.jpg" alt="Hamburguesa con patatas">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./img/hamburguesa-recortada.jpg" />
+                            <source media="(min-width: 768px)" srcset="./img/hamburguesa.jpg" />
+                            <img src="./img/hamburguesa.jpg" alt="Hamburguesa con patatas">
+                        </picture> 
                     </div>
 
                     <div class="campo">
@@ -136,7 +140,8 @@
                 </div>
 
                 <div class="imagen-relacionada">
-                    <img src="./img/receta-3.jpg" alt="Receta 3">
+                    <img srcset="./img/receta-3-600px.jpg, ./img/receta-3-900px.jpg 1.5x, ./img/receta-3-1200px.jpg 2x"
+                        src="./img/receta-3-600px.jpg" alt="Receta 3">
                 </div>
             </div>
         </section>
