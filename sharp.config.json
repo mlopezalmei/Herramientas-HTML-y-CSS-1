@@ -7,5 +7,9 @@
   "png": {
     "compressionLevel": 7,
     "adaptiveFiltering": true
+  },
+  "webp": {
+    "quality": 80,
+    "lossless": false
   }
 }
