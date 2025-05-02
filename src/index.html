@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
 </head>
+
 <body>
     <header>
 
         <h1><a href="index.html"><img src="./img/favicon.png" alt="Logotipo"></a>Recetas del Mundo</h1>
-        
+
         <nav class="barra-navegacion">
             <ul>
                 <li><a href="index.html" class="activo"><i class="fa fa-fw fa-home"></i> Portada</a></li>
@@ -24,24 +25,46 @@
     </header>
 
     <main class="portada">
-        <section class="bienvenida">
-            <h2>Bienvenido a Recetas del Mundo</h2>
-            <p>Explora deliciosas recetas de diferentes culturas y aprende a cocinarlas paso a paso.</p>
-            <a href="categoria.html" class="boton">Ver Recetas</a>
-        </section>
+        <div class="imagen-portada left">
+            <picture>
+                <source srcset="img/webp/receta-1.webp" type="image/webp">
+                <img src="img/receta-1.jpg" alt="Imagen portada 1">
+              </picture>
+        </div>
 
-        <section class="explicacion-web">
-            <h2>¿Qué encontrarás en Recetas del Mundo?</h2>
-            <p>Recetas del Mundo es un espacio donde reunimos las mejores recetas de diferentes culturas y tradiciones gastronómicas. Aquí podrás:</p>
-            <ul>
-                <li>Explorar recetas de todo el mundo, organizadas por categorías.</li>
-                <li>Descubrir platos tradicionales y nuevas tendencias gastronómicas.</li>
-                <li>Aprender trucos y consejos para mejorar tus habilidades en la cocina.</li>
-                <li>Compartir tus propias recetas con la comunidad.</li>
-            </ul>
-        </section>
+        <div class="contenido">
+            <section class="bienvenida">
+                <h2>Bienvenido a Recetas del Mundo</h2>
+                <p>Explora deliciosas recetas de diferentes culturas y aprende a cocinarlas paso a paso.</p>
+                <a href="categoria.html" class="boton">
+                    <svg class="icono-plato" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24">
+                        <circle class="plato" cx="32" cy="32" r="28" fill="none" stroke="#fff" stroke-width="4"/>
+                        <circle class="plato-interno" cx="32" cy="32" r="20" fill="none" stroke="#fff" stroke-width="4"/>
+                        <line class="base" x1="12" y1="44" x2="52" y2="44" stroke="#fff" stroke-width="4"/>
+                    </svg>
+                    Ver Recetas
+                </a>
+            </section>
 
-        
+            <section class="explicacion-web">
+                <h2>¿Qué encontrarás en Recetas del Mundo?</h2>
+                <p>Recetas del Mundo es un espacio donde reunimos las mejores recetas de diferentes culturas y
+                    tradiciones gastronómicas. Aquí podrás:</p>
+                <ul>
+                    <li>Explorar recetas de todo el mundo, organizadas por categorías.</li>
+                    <li>Descubrir platos tradicionales y nuevas tendencias gastronómicas.</li>
+                    <li>Aprender trucos y consejos para mejorar tus habilidades en la cocina.</li>
+                    <li>Compartir tus propias recetas con la comunidad.</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="imagen-portada right">
+            <picture>
+                <source srcset="img/webp/receta-2.webp" type="image/webp">
+                <img src="img/receta-2.jpg" alt="Imagen portada 2">
+              </picture>
+        </div>
     </main>
 
     <footer>
@@ -54,4 +77,5 @@
     </footer>
 
 </body>
+
 </html>

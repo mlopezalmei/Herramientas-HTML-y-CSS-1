@@ -40,7 +40,16 @@
                 <div class="multimedia">
                     <div class="campo">
                         <h3>Imagen</h3>
-                        <img src="./img/hamburguesa.jpg" alt="Hamburguesa con patatas">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./img/webp/hamburguesa-recortada.webp"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="./img/webp/hamburguesa.webp" type="image/webp" />
+
+                            <source media="(max-width: 767px)" srcset="./img/hamburguesa-recortada.jpg" />
+                            <source media="(min-width: 768px)" srcset="./img/hamburguesa.jpg" />
+
+                            <img src="./img/hamburguesa.jpg" alt="Hamburguesa con patatas" />
+                        </picture>
                     </div>
 
                     <div class="campo">
@@ -128,15 +137,27 @@
             <h2>Te puede interesar...</h2>
             <div class="contenedor-relacionadas">
                 <div class="imagen-relacionada">
-                    <img src="./img/receta-1.jpg" alt="Receta 1">
+                    <picture>
+                        <source srcset="./img/webp/receta-1.webp" type="image/webp">
+                        <img src="./img/receta-1.jpg" alt="Receta 1">
+                    </picture>
                 </div>
 
                 <div class="imagen-relacionada">
-                    <img src="./img/receta-2.jpg" alt="Receta 2">
+                    <picture>
+                        <source srcset="./img/webp/receta-2.webp" type="image/webp">
+                        <img src="./img/receta-2.jpg" alt="Receta 2">
+                    </picture>
                 </div>
 
                 <div class="imagen-relacionada">
-                    <img src="./img/receta-3.jpg" alt="Receta 3">
+                    <picture>
+                        <source
+                            srcset="./img/webp/receta-3-600px.webp, ./img/webp/receta-3-900px.webp 1.5x, ./img/webp/receta-3-1200px.webp 2x"
+                            type="image/webp">
+                        <img srcset="./img/receta-3-600px.jpg, ./img/receta-3-900px.jpg 1.5x, ./img/receta-3-1200px.jpg 2x"
+                            src="./img/receta-3-600px.jpg" alt="Receta 3">
+                    </picture>
                 </div>
             </div>
         </section>

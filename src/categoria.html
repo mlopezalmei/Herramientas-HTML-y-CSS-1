@@ -40,9 +40,9 @@
                     <option value="Arroces">Arroces</option>
                 </select>
             </div>
-            
+
             <div class="contenedor-recetas">
-                
+
                 <a href="detalles-pasta.html" class="receta">
                     <div class="info-receta">
                         <h3>Pasta al pesto con tomate</h3>
@@ -52,9 +52,12 @@
                         </div>
                     </div>
                     <div class="imagen-receta">
-                        <img src="img/pasta_pesto.jpg" alt="Pasta al pesto con tomate">
+                        <picture>
+                            <source srcset="img/webp/pasta_pesto.webp" type="image/webp">
+                            <img src="img/pasta_pesto.jpg" alt="Pasta al pesto con tomate">
+                        </picture>
                     </div>
-                </a>                
+                </a>
 
                 <a href="detalles-hamburguesa.html" class="receta">
                     <div class="info-receta">
@@ -65,7 +68,10 @@
                         </div>
                     </div>
                     <div class="imagen-receta">
-                        <img src="img/hamburguesa.jpg" alt="Hamburguesa con patatas">
+                        <picture>
+                            <source srcset="img/webp/hamburguesa.webp" type="image/webp">
+                            <img src="img/hamburguesa.jpg" alt="Hamburguesa con patatas">
+                        </picture>
                     </div>
                 </a>
 
@@ -78,7 +84,10 @@
                         </div>
                     </div>
                     <div class="imagen-receta">
-                        <img src="img/tarta-queso.jpg" alt="Tarta de queso">
+                        <picture>
+                            <source srcset="img/webp/tarta-queso.webp" type="image/webp">
+                            <img src="img/tarta-queso.jpg" alt="Tarta de queso">
+                        </picture>
                     </div>
                 </div>
 
@@ -91,8 +100,27 @@
                         </div>
                     </div>
                     <div class="imagen-receta">
-                        <img src="img/lentejas.jpg" alt="Lentejas">
-                    </div>
+                        <picture>
+                            <source srcset="
+                                img/webp/lentejas-600px.webp 600w,
+                                img/webp/lentejas-900px.webp 900w,
+                                img/webp/lentejas-1100px.webp 1100w
+                            " sizes="
+                                (min-width: 1024px) 1100px,
+                                (min-width: 768px) 900px,
+                                600px
+                            " type="image/webp">
+                            <img src="img/lentejas-600px.jpg" alt="Lentejas" srcset="
+                                img/lentejas-600px.jpg 600w,
+                                img/lentejas-900px.jpg 900w,
+                                img/lentejas-1100px.jpg 1100w
+                            " sizes="
+                                (min-width: 1024px) 1100px,
+                                (min-width: 768px) 900px,
+                                600px
+                            ">
+                        </picture>
+                    </div>                    
                 </div>
 
                 <div class="receta">
@@ -104,7 +132,10 @@
                         </div>
                     </div>
                     <div class="imagen-receta">
-                        <img src="img/paella.jpg" alt="Paella">
+                        <picture>
+                            <source srcset="img/webp/paella.webp" type="image/webp">
+                            <img src="img/paella.jpg" alt="Paella">
+                        </picture>
                     </div>
                 </div>
 
@@ -117,7 +148,10 @@
                         </div>
                     </div>
                     <div class="imagen-receta">
-                        <img src="img/pato-frito.jpg" alt="Pechuga de pato frita">
+                        <picture>
+                            <source srcset="img/webp/pato-frito.webp" type="image/webp">
+                            <img src="img/pato-frito.jpg" alt="Pechuga de pato frita">
+                        </picture>
                     </div>
                 </div>
             </div>
