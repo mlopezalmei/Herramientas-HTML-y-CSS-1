@@ -7,13 +7,13 @@
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
     <header>
 
-        <h1><a href="index.html"><img src="./img/favicon.png" alt="Logotipo"></a>Recetas del Mundo</h1>
+        <h1><a href="index.html"><img src="./img/favicon.png" alt="Logotipo" loading="lazy"></a>Recetas del Mundo</h1>
 
         <nav class="barra-navegacion">
             <ul>
@@ -28,7 +28,7 @@
         <div class="imagen-portada left">
             <picture>
                 <source srcset="img/webp/receta-1.webp" type="image/webp">
-                <img src="img/receta-1.jpg" alt="Imagen portada 1">
+                <img src="img/receta-1.jpg" alt="Imagen portada 1" loading="lazy">
               </picture>
         </div>
 
@@ -62,8 +62,8 @@
         <div class="imagen-portada right">
             <picture>
                 <source srcset="img/webp/receta-2.webp" type="image/webp">
-                <img src="img/receta-2.jpg" alt="Imagen portada 2">
-              </picture>
+                <img src="img/receta-2.jpg" alt="Imagen portada 2" loading="lazy">
+            </picture>
         </div>
     </main>
 

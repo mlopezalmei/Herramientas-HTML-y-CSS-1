@@ -7,13 +7,13 @@
     <title>Pasta al pesto</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
     <header>
 
-        <h1><a href="index.html"><img src="./img/favicon.png" alt="Logotipo"></a>Recetas del Mundo</h1>
+        <h1><a href="index.html"><img src="./img/favicon.png" alt="Logotipo" loading="lazy"></a>Recetas del Mundo</h1>
 
         <nav class="barra-navegacion">
             <ul>
@@ -45,13 +45,13 @@
                             <source media="(min-width: 768px)" srcset="./img/webp/pasta_pesto.webp" type="image/webp">
                             <source media="(max-width: 767px)" srcset="./img/pasta_pesto-recortada.jpg">
                             <source media="(min-width: 768px)" srcset="./img/pasta_pesto.jpg">
-                            <img src="./img/pasta_pesto.jpg" alt="Pasta al pesto con tomate">
+                            <img src="./img/pasta_pesto.jpg" alt="Pasta al pesto con tomate" loading="lazy">
                         </picture>                                                  
                     </div>
 
                     <div class="campo">
                         <h3>Vídeo</h3>
-                        <video controls>
+                        <video controls preload="none">
                             <source src="./vid/video-1.mp4" type="video/mp4">
                             Tu navegador no soporta la reproducción de vídeos.
                         </video>
@@ -132,14 +132,14 @@
                 <div class="imagen-relacionada">
                     <picture>
                         <source srcset="./img/webp/receta-1.webp" type="image/webp">
-                        <img src="./img/receta-1.jpg" alt="Receta 1">
+                        <img src="./img/receta-1.jpg" alt="Receta 1" loading="lazy">
                     </picture>
                 </div>
 
                 <div class="imagen-relacionada">
                     <picture>
                         <source srcset="./img/webp/receta-2.webp" type="image/webp">
-                        <img src="./img/receta-2.jpg" alt="Receta 2">
+                        <img src="./img/receta-2.jpg" alt="Receta 2" loading="lazy">
                     </picture>
                 </div>
 
@@ -149,7 +149,7 @@
                             srcset="./img/webp/receta-3-600px.webp, ./img/webp/receta-3-900px.webp 1.5x, ./img/webp/receta-3-1200px.webp 2x"
                             type="image/webp">
                         <img srcset="./img/receta-3-600px.jpg, ./img/receta-3-900px.jpg 1.5x, ./img/receta-3-1200px.jpg 2x"
-                            src="./img/receta-3-600px.jpg" alt="Receta 3">
+                            src="./img/receta-3-600px.jpg" alt="Receta 3" loading="lazy">
                     </picture>
                 </div>
             </div>
